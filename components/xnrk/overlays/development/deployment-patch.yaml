@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: xnrk
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-dieq-tenant/byoc-app-joym/xnrk@sha256:17317c5d5f4a3fbecf3e0847a814666ec97c30b7b55c83bc3beb2e3c9e42e070
+        name: my-java-quarkus
+        resources: {}
+status: {}
